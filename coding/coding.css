@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: 'Inconsolata', monospace;
+  /* margin: 0;
+  padding: 0; */
+}
+.well{
+  margin-right:22px; 
+}
+body{
+  height: 100vh;
+  padding: 5% 5% 10% 5%;
+  background-image: linear-gradient( 102.1deg,  rgba(96,221,142,1) 8.7%, rgba(24,138,141,1) 88.1% );}
+
+
+h1 {
+  /* font-weight: 700; */
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #fff, #000, #fff, #000, #fff,#000);
+  letter-spacing: 2px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 4s linear infinite;
+
+}
+
+.blk{
+  background-color: black; 
+}
+
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+.ol[type] > li{
+  width: 40%;
+ 
+
+}
+ol[type] > li:hover {
+  background-color: #ff3333;
+  cursor: pointer;
+  border-radius: 15px;
+  /* width: 50%; */
+}
+
+ol[type] > li.correct:hover {
+  background-color: green;
+  cursor: pointer;
+  border-radius: 10px;
+  /* width: 50%; */
+}
+
+.highlight:hover{
+  color: white;
+
+}
+
+.strong{font-weight: 1000;}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 20px;
+    
+  }
+  body{
+    height: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+
+}
